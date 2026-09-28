@@ -1,6 +1,8 @@
-const video = document.getElementById("hero-video");
+// const video = document.getElementById("hero-video");
 
-video.addEventListener("ended", () => {
-    console.log("ВІДЕО ЗАКІНЧИЛОСЯ");
-    document.body.classList.add("video-finished");
-});
+// video.addEventListener("ended", () => {
+//     console.log("ВІДЕО ЗАКІНЧИЛОСЯ");
+//     document.body.classList.add("video-finished");
+// });
+
+document.body.classList.add("video-finished");

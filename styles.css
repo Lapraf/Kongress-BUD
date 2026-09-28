@@ -47,14 +47,12 @@ body.video-finished header {
 body.video-finished .hero-button {
     opacity: 1;
     transform: translate(-50%, -50%);
-
     transition-delay: 0.8s;
 }
 
 /* Header & Navigation */
 header {
     background-color: #6B6B67;
-    padding: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     position: absolute;
@@ -102,10 +100,8 @@ header {
 .navbar .cta-button {
     height: 100%;
     background-color: #F05A28;
-    border: none;
     border-radius: 10px;
     padding: 0.75rem 2rem;
-    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
@@ -116,6 +112,9 @@ header {
 }
 
 /* Main Content */
+main{
+    align-items: center;
+}
 
 /* Hero Section */
 .hero {
@@ -148,7 +147,6 @@ header {
     background-color: #F05A28;
     color: #FFFFFF;
     text-decoration: none;
-    border: none;
     border-radius: 10px;
     padding: 1.5rem 3rem;
     cursor: pointer;
@@ -158,6 +156,107 @@ header {
 .hero .cta-button:hover {
     background-color: #6B6B67;
     transform: scale(1)
+}
+
+/* Services */
+.services {
+    background-color: #D7D8D6;
+    margin: 0 auto;
+}
+
+.section-heading {
+    padding: 2rem;
+    text-align: center;
+}
+
+.section-heading h3, h4 {
+    color: #17191B;
+}
+
+.section-heading p {
+    color: #6B6B67;
+    font-size: 26px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 1.5rem;
+}
+
+.section-title span {
+    width: 2rem;
+    height: 1px;
+    background-color: #F05A28;
+}
+
+.blocks {
+    max-width: 1200px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.block {
+    aspect-ratio: 1 / 1;
+    background-color: #17191B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    gap: 1rem
+}
+
+.block img {
+    width: 100%;
+    height: 50%;
+}
+
+.block ul {
+    width: fit-content;
+    color: #D7D8D6;
+    padding-left: 2rem;
+    margin: auto auto;
+}
+
+.service-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.service-button {
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.service-button svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.service-button line,
+.service-button polyline {
+    fill: none;
+    stroke: #F05A28;
+    stroke-width: 5;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+    transition: all 0.3s ease;
+}
+
+.service-button svg {
+    transition: transform 0.35s cubic-bezier(.16, 1, .3, 1);
+}
+
+.service-button:hover svg {
+    transform: translateX(10px);
 }
 
 /* Responsive */

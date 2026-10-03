@@ -563,5 +563,8 @@ footer {
     color: #D7D8D6;
     text-decoration: none;
 }
+
 /* Responsive */
-@media (max-width: 768px){}
+@media (max-width: 768px){
+    
+}
